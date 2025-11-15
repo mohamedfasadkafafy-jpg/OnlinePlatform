@@ -8,7 +8,6 @@ document.getElementById('loginForm').addEventListener('submit', function(e){
     // Multiple users
     const users = [
         {username: "mohamed farouk", password: "2910mf"},
-        {username: "dana amr", password: "da543876599987"},
         {username: "aya hatem", password: "ay5410"},
         {username: "aya mahmoud", password: "ma643"},
         {username: "esraa anwar", password: "ea84521"},
@@ -29,13 +28,32 @@ document.getElementById('loginForm').addEventListener('submit', function(e){
         {username: "menna allah", password: "mal54322287699421"},
         {username: "haneen wael", password: "hw555438709844"},
         {username: "shahd yasser", password: "sy54447689043"},
-
     ];
 
     const validUser = users.find(user => user.username === username && user.password === password);
 
     if(validUser){
         window.location.href = "https://mohamedfasadkafafy-jpg.github.io/site/"; // Change this to the target URL
+    } else {
+        errorMsg.textContent = "Could not find your account";
+    }
+});
+document.getElementById('loginForm').addEventListener('submit', function(e){
+    e.preventDefault();
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const errorMsg = document.getElementById('errorMsg');
+
+    // Multiple users
+    const users = [
+        {username: "Dana Amr", password: "Da536744"},
+        ];
+
+    const validUser = users.find(user => user.username === username && user.password === password);
+
+    if(validUser){
+        window.location.href = "https://mohamedfasadkafafy-jpg.github.io/OnlinePlatformda/"; // Change this to the target URL
     } else {
         errorMsg.textContent = "Could not find your account";
     }
