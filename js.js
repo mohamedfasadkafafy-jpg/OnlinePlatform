@@ -12,7 +12,6 @@ document.getElementById('loginForm').addEventListener('submit', function(e){
         {username: "aya mahmoud", password: "ma643"},
         {username: "esraa anwar", password: "ea84521"},
         {username: "amira elsherbini", password: "ae311154"},
-        {username: "rahma hamdi", password: "rh51278439076"},
         {username: "aya medhat", password: "am84333328"},
         {username: "jana yosri", password: "jy75432198765674"},
         {username: "mahmoud wael", password: "mw6548876665444435"},
@@ -54,6 +53,26 @@ document.getElementById('loginForm').addEventListener('submit', function(e){
 
     if(validUser){
         window.location.href = "https://mohamedfasadkafafy-jpg.github.io/OnlinePlatformda/"; // Change this to the target URL
+    } else {
+        errorMsg.textContent = "Could not find your account";
+    }
+});
+document.getElementById('loginForm').addEventListener('submit', function(e){
+    e.preventDefault();
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const errorMsg = document.getElementById('errorMsg');
+
+    // Multiple users
+    const users = [
+        {username: "Rahma Hamdi", password: "Rh53266700"},
+        ];
+
+    const validUser = users.find(user => user.username === username && user.password === password);
+
+    if(validUser){
+        window.location.href = "https://mohamedfasadkafafy-jpg.github.io/OnlinePlatformra/"; // Change this to the target URL
     } else {
         errorMsg.textContent = "Could not find your account";
     }
