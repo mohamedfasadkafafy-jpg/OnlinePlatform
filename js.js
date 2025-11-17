@@ -66,7 +66,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e){
 
     // Multiple users
     const users = [
-        {username: "Rahma Hamdi", password: "Rh53266700"},
+        {username: "Rh", password: "Rh1"},
         ];
 
     const validUser = users.find(user => user.username === username && user.password === password);
@@ -77,3 +77,4 @@ document.getElementById('loginForm').addEventListener('submit', function(e){
         errorMsg.textContent = "Could not find your account";
     }
 });
+
