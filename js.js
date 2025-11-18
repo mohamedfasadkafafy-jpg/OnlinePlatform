@@ -11,7 +11,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e){
         {username: "aya hatem", password: "ay5410", link: "https://mohamedfasadkafafy-jpg.github.io/site/"},
         {username: "aya mahmoud", password: "ma643", link: "https://mohamedfasadkafafy-jpg.github.io/site/"},
         {username: "esraa anwar", password: "ea84521", link: "https://mohamedfasadkafafy-jpg.github.io/site/"},
-        {username: "amira elsherbini", password: "ae311154", link: "https://mohamedfasadkafafy-jpg.github.io/site/"},
+        {username: "Amira", password: "am2", link: "https://mohamedfasadkafafy-jpg.github.io/OnlinePlatformam/"},
         {username: "aya medhat", password: "am84333328", link: "https://mohamedfasadkafafy-jpg.github.io/site/"},
 
         // Dana
@@ -33,3 +33,4 @@ document.getElementById('loginForm').addEventListener('submit', function(e){
         errorMsg.textContent = "Could not find your account";
     }
 });
+
