@@ -147,6 +147,8 @@ body{
 .txt-2 {
   position: absolute;
   word-spacing: -1em;
+  margin-top: 3px;
+}
 }
 .txt-1 {
   animation: appear-anim 1s ease-in-out forwards;
@@ -496,4 +498,5 @@ body{
   margin-top: 300px;
   margin-bottom: 100px;
 }
+
 
