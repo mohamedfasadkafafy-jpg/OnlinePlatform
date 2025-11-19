@@ -147,7 +147,6 @@ body{
 .txt-2 {
   position: absolute;
   word-spacing: -1em;
-  margin-top: 3px;
 }
 }
 .txt-1 {
@@ -498,5 +497,6 @@ body{
   margin-top: 300px;
   margin-bottom: 100px;
 }
+
 
 
