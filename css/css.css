@@ -148,7 +148,6 @@ body{
   position: absolute;
   word-spacing: -1em;
 }
-}
 .txt-1 {
   animation: appear-anim 1s ease-in-out forwards;
 }
@@ -497,6 +496,60 @@ body{
   margin-top: 300px;
   margin-bottom: 100px;
 }
+/* === MOBILE FIXES WITHOUT CHANGING DESIGN === */
+@media (max-width: 768px) {
 
+  body {
+    background-size: cover;
+    background-position: center;
+  }
 
+  .allb {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
 
+  .tit {
+    font-size: 1.3em !important;
+    margin-top: 80px !important;
+    margin-bottom: 40px !important;
+    text-align: center;
+    padding: 0.5em 1em;
+  }
+
+  /* Geology button wrapper */
+  .btn-wrapper {
+    transform: scale(0.85);
+  }
+
+  .btn {
+    padding: 0.6em 1em;
+    font-size: 0.9em;
+  }
+
+  /* Chemistry button */
+  .loader {
+    margin-left: 0 !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .loader-bg {
+    width: 110px;
+    padding: 8px 10px;
+    font-size: 0.8em;
+  }
+
+  .Chemistry {
+    margin-top: 10px !important;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background-size: cover !important;
+    background-position: center center !important;
+    background-attachment: fixed;
+  }
+}
