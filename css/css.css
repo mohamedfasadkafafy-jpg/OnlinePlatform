@@ -1179,7 +1179,7 @@ body{
 }
 .contener h2{
   color: #4e9eff;
-  font-size: 3em;
+  font-size: 2.8em;
   font-weight: 600;
   width: 600px;
 }
@@ -1243,3 +1243,4 @@ body{
     width: 60px !important; /* أصغر الصورة الدائرية */
   }
 }
+
